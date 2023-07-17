@@ -1,0 +1,55 @@
+Place I found the resource,"@misc{resnet,
+        author = {},
+        title = {{R}es{N}et-50 convolutional neural network - {M}{A}{T}{L}{A}{B} resnet50 - {M}ath{W}orks {B}enelux --- nl.mathworks.com},
+        howpublished = {\url{https://nl.mathworks.com/help/deeplearning/ref/resnet50.html}},
+        year = {},
+        note = {[Accessed 25-Jun-2023]},
+}","@inproceedings{kaldiwsj0,
+  title={The Kaldi speech recognition toolkit},
+  author={Povey, Daniel and Ghoshal, Arnab and Boulianne, Gilles and Burget, Lukas and Glembek, Ondrej and Goel, Nagendra and Hannemann, Mirko and Motlicek, Petr and Qian, Yanmin and Schwarz, Petr and others},
+  booktitle={IEEE 2011 workshop on automatic speech recognition and understanding},
+  number={CONF},
+  year={2011},
+  organization={IEEE Signal Processing Society}
+}","@misc{kaldihkust,
+        author = {ma08},
+        title = {Kaldi HKUST},
+        howpublished = {\url{https://github.com/kaldi-asr/kaldi/tree/master/egs/hkust}},
+        year = {2016},
+        note = {[Accessed 25-Jun-2023]},
+}","@inproceedings{tacotron,
+  title={Natural tts synthesis by conditioning wavenet on mel spectrogram predictions},
+  author={Shen, Jonathan and Pang, Ruoming and Weiss, Ron J and Schuster, Mike and Jaitly, Navdeep and Yang, Zongheng and Chen, Zhifeng and Zhang, Yu and Wang, Yuxuan and Skerrv-Ryan, Rj and others},
+  booktitle={2018 IEEE international conference on acoustics, speech and signal processing (ICASSP)},
+  pages={4779--4783},
+  year={2018},
+  organization={IEEE}
+}","@article{wavenet1,
+  title={Wavenet: A generative model for raw audio},
+  author={Oord, Aaron van den and Dieleman, Sander and Zen, Heiga and Simonyan, Karen and Vinyals, Oriol and Graves, Alex and Kalchbrenner, Nal and Senior, Andrew and Kavukcuoglu, Koray},
+  journal={arXiv preprint arXiv:1609.03499},
+  year={2016}
+}","@article{deepvoice,
+  title={Deep voice 3: 2000-speaker neural text-to-speech},
+  author={Ping, Wei and Peng, Kainan and Gibiansky, Andrew and Arik, Sercan O and Kannan, Ajay and Narang, Sharan and Raiman, Jonathan and Miller, John},
+  journal={proc. ICLR},
+  pages={214--217},
+  year={2018}
+}","@inproceedings{tagatune,
+  title={Input-agreement: a new mechanism for collecting data using human computation games},
+  author={Law, Edith and Von Ahn, Luis},
+  booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  pages={1197--1206},
+  year={2009}
+}"
+Another place I found the resource,,,,,"@misc{wavenet2,
+        author = {Aäron van den Oord, Sander Dieleman},
+        title = {{W}ave{N}et: {A} generative model for raw audio --- deepmind.com},
+        howpublished = {\url{https://www.deepmind.com/blog/wavenet-a-generative-model-for-raw-audio}},
+        year = {2016},
+        note = {[Accessed 25-Jun-2023]},
+}",,
+Name,ResNet,Kaldi framework/recipe for WSJ0,Kaldi framework/recipe for WSJ0,Tacotron 2,WaveNet,DeepVoice,Tag A Tune
+Name of the dataset that the current model is trained on,ImageNet,WSJ0,HKUST,Uses WaveNet and compares its values with Deep Voice 3,"Google's Mandarin Chinese TTS dataset, a YouTube piano dataset, DARPA TIMIT, Google’s North American English TTS dataset and MagnaTagATune",CSTR VCTK Corpus and LibriSpeech ASR corpus,MagnaTune song dataset
+Detail stating version,Explicit,Implicit,Implicit,Implicit,Implicit,Explicit,Implicit
+Justification for detail stating version,They explained why they have chosen to use ImageNet and the benefits of using ImageNet.,They did not give much details on why and how they chose WSJ0. I felt that the algortihm created was for general speech use-cases and the speech dataset being WSJ0 did not seem important.,They did not give much details on why and how they chose HKUST. I felt that the algortihm created was for general speech use-cases and the speech dataset being WSJ0 did not seem important.,"They did not mention the exact dataset they have trained on they only mentioned Deep Voice 3 few times while comparing their own model and testing their model against Deep Voice 3. It is significant to note that this documentation was fairly hard for me to understand because I was not familiar with any of the technologies. There might be some informtion presented in the documentation stating that that information was not necessary, I could not distinguish it.","They did not reference the datasets they have utilized and due to the naming 'Youtube piano dataset', the data was impossible to track down.",The documentation is clear on the datasets utilized and the reasons to do so.,They did not inform which songs/artists they have utilized and it is not apparent how the training happens because the users are allowed to tag both the song itelf and also the specific parts of the song.
